@@ -61,11 +61,6 @@ class WorkflowMain {
         // Print parameter summary log to screen
         log.info paramsSummaryLog(workflow, params, log)
 
-        // Check that conda channels are set-up correctly
-        if (params.enable_conda) {
-            Utils.checkCondaChannels(log)
-        }
-
         // Check AWS batch settings
         NfcoreTemplate.awsBatch(workflow, params)
 

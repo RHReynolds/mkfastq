@@ -55,7 +55,7 @@ Have you provided the following extra information/files:
 
 ## Container engine
 
--   Engine: <!-- [e.g. Conda, Docker, Singularity, Podman, Shifter or Charliecloud] -->
+-   Engine: <!-- [e.g. Docker, Singularity, Podman, Shifter or Charliecloud] -->
 -   version: <!-- [e.g. 1.0.0] -->
 
 ## Additional context
