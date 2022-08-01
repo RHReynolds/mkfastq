@@ -22,7 +22,7 @@ process SAMPLESHEET_CHECK {
     output:
     path '*.csv'
 
-    script: // This script is bundled with the pipeline, in nf-core/mkfastq/bin/
+    script: // This script is bundled with the pipeline, in RHReynolds/mkfastq/bin/
     """
     check_samplesheet.py \\
         $samplesheet \\

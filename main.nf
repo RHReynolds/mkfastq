@@ -1,11 +1,9 @@
 #!/usr/bin/env nextflow
 /*
 ========================================================================================
-    nf-core/mkfastq
+    RHReynolds/mkfastq
 ========================================================================================
-    Github : https://github.com/nf-core/mkfastq
-    Website: https://nf-co.re/mkfastq
-    Slack  : https://nfcore.slack.com/channels/mkfastq
+    Github : https://github.com/RHReynolds/mkfastq
 ----------------------------------------------------------------------------------------
 */
 
@@ -36,7 +34,7 @@ WorkflowMain.initialise(workflow, params, log)
 include { MKFASTQ } from './workflows/mkfastq'
 
 //
-// WORKFLOW: Run main nf-core/mkfastq analysis pipeline
+// WORKFLOW: Run main RHReynolds/mkfastq analysis pipeline
 //
 workflow NFCORE_MKFASTQ {
     MKFASTQ ()

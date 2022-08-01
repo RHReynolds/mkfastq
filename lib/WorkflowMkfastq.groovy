@@ -1,5 +1,5 @@
 //
-// This file holds several functions specific to the workflow/mkfastq.nf in the nf-core/mkfastq pipeline
+// This file holds several functions specific to the workflow/mkfastq.nf in the RHReynolds/mkfastq pipeline
 //
 
 class WorkflowMkfastq {

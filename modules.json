@@ -1,6 +1,6 @@
 {
-    "name": "nf-core/mkfastq",
-    "homePage": "https://github.com/nf-core/mkfastq",
+    "name": "RHReynolds/mkfastq",
+    "homePage": "https://github.com/RHReynolds/mkfastq",
     "repos": {
         "nf-core/modules": {
             "fastqc": {

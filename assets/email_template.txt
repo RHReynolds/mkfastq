@@ -1,19 +1,15 @@
 ----------------------------------------------------
-                                        ,--./,-.
-        ___     __   __   __   ___     /,-._.--~\\
-  |\\ | |__  __ /  ` /  \\ |__) |__         }  {
-  | \\| |       \\__, \\__/ |  \\ |___     \\`-._,-`-,
-                                        `._,._,'
-  nf-core/mkfastq v${version}
+
+  RHReynolds/mkfastq v${version}
 ----------------------------------------------------
 
 Run Name: $runName
 
 <% if (success){
-    out << "## nf-core/mkfastq execution completed successfully! ##"
+    out << "## RHReynolds/mkfastq execution completed successfully! ##"
 } else {
     out << """####################################################
-## nf-core/mkfastq execution completed unsuccessfully! ##
+## RHReynolds/mkfastq execution completed unsuccessfully! ##
 ####################################################
 The exit status of the task that caused the workflow execution to fail was: $exitStatus.
 The full error message was:
@@ -36,5 +32,5 @@ Pipeline Configuration:
 <% out << summary.collect{ k,v -> " - $k: $v" }.join("\n") %>
 
 --
-nf-core/mkfastq
-https://github.com/nf-core/mkfastq
+RHReynolds/mkfastq
+https://github.com/RHReynolds/mkfastq

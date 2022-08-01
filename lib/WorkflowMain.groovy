@@ -1,5 +1,5 @@
 //
-// This file holds several functions specific to the main.nf workflow in the nf-core/mkfastq pipeline
+// This file holds several functions specific to the main.nf workflow in the RHReynolds/mkfastq pipeline
 //
 
 class WorkflowMain {

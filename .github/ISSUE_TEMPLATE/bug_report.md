@@ -5,7 +5,7 @@ labels: bug
 ---
 
 <!--
-# nf-core/mkfastq bug report
+# RHReynolds/mkfastq bug report
 
 Hi there!
 
@@ -17,8 +17,8 @@ Please delete this text and anything that's not relevant from the template below
 
 I have checked the following places for your error:
 
-- [ ] [nf-core website: troubleshooting](https://nf-co.re/usage/troubleshooting)
-- [ ] [nf-core/mkfastq pipeline documentation](https://nf-co.re/mkfastq/usage)
+-   [ ] [nf-core website: troubleshooting](https://nf-co.re/usage/troubleshooting)
+-   [ ] [RHReynolds/mkfastq pipeline documentation]()
 
 ## Description of the bug
 
@@ -39,24 +39,24 @@ Steps to reproduce the behaviour:
 
 Have you provided the following extra information/files:
 
-- [ ] The command used to run the pipeline
-- [ ] The `.nextflow.log` file <!-- this is a hidden file in the directory where you launched the pipeline -->
+-   [ ] The command used to run the pipeline
+-   [ ] The `.nextflow.log` file <!-- this is a hidden file in the directory where you launched the pipeline -->
 
 ## System
 
-- Hardware: <!-- [e.g. HPC, Desktop, Cloud...] -->
-- Executor: <!-- [e.g. slurm, local, awsbatch...] -->
-- OS: <!-- [e.g. CentOS Linux, macOS, Linux Mint...] -->
-- Version <!-- [e.g. 7, 10.13.6, 18.3...] -->
+-   Hardware: <!-- [e.g. HPC, Desktop, Cloud...] -->
+-   Executor: <!-- [e.g. slurm, local, awsbatch...] -->
+-   OS: <!-- [e.g. CentOS Linux, macOS, Linux Mint...] -->
+-   Version <!-- [e.g. 7, 10.13.6, 18.3...] -->
 
 ## Nextflow Installation
 
-- Version: <!-- [e.g. 21.04.0] -->
+-   Version: <!-- [e.g. 21.04.0] -->
 
 ## Container engine
 
-- Engine: <!-- [e.g. Conda, Docker, Singularity, Podman, Shifter or Charliecloud] -->
-- version: <!-- [e.g. 1.0.0] -->
+-   Engine: <!-- [e.g. Conda, Docker, Singularity, Podman, Shifter or Charliecloud] -->
+-   version: <!-- [e.g. 1.0.0] -->
 
 ## Additional context
 

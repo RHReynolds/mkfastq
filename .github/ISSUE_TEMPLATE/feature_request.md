@@ -1,11 +1,11 @@
 ---
 name: Feature request
-about: Suggest an idea for the nf-core/mkfastq pipeline
+about: Suggest an idea for the RHReynolds/mkfastq pipeline
 labels: enhancement
 ---
 
 <!--
-# nf-core/mkfastq feature request
+# RHReynolds/mkfastq feature request
 
 Hi there!
 
