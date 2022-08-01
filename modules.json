@@ -3,6 +3,9 @@
     "homePage": "https://github.com/RHReynolds/mkfastq",
     "repos": {
         "nf-core/modules": {
+            "custom/dumpsoftwareversions": {
+                "git_sha": "e745e167c1020928ef20ea1397b6b4d230681b4d"
+            },
             "cellranger/mkfastq": {
                 "git_sha": "b573ff053eb7eef80211299a6724e5973ca61f37"
             }
