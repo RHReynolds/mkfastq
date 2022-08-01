@@ -1,8 +1,8 @@
 //
-// This file holds several functions specific to the workflow/mkfastq.nf in the nf-core/mkfastq pipeline
+// This file holds several functions specific to the workflow/rhreynolds-mkfastq.nf in the nf-core/rhreynolds-mkfastq pipeline
 //
 
-class WorkflowMkfastq {
+class WorkflowRhreynolds-mkfastq {
 
     //
     // Check and validate parameters
@@ -48,11 +48,11 @@ class WorkflowMkfastq {
     //
     private static void genomeExistsError(params, log) {
         if (params.genomes && params.genome && !params.genomes.containsKey(params.genome)) {
-            log.error "=============================================================================\n" +
+            log.error "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" +
                 "  Genome '${params.genome}' not found in any config files provided to the pipeline.\n" +
                 "  Currently, the available genome keys are:\n" +
                 "  ${params.genomes.keySet().join(", ")}\n" +
-                "==================================================================================="
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
             System.exit(1)
         }
     }
