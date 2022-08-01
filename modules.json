@@ -1,5 +1,11 @@
 {
     "name": "RHReynolds/mkfastq",
     "homePage": "https://github.com/RHReynolds/mkfastq",
-    "repos": {}
+    "repos": {
+        "nf-core/modules": {
+            "cellranger/mkfastq": {
+                "git_sha": "b573ff053eb7eef80211299a6724e5973ca61f37"
+            }
+        }
+    }
 }
