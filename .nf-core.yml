@@ -6,14 +6,17 @@ lint:
     - .github/workflows/awstest.yml
     - .github/workflows/awsfulltest.yml
     - assets/nf-core-RHReynolds/mkfastq_logo.png
-    - assets/multiqc_config.yaml
+    - assets/nf-core-RHReynolds/mkfastq_logo_light.png
+    - assets/multiqc_config.yml
     - conf/test_full.config
     - docs/images/nf-core-RHReynolds/mkfastq_logo.png
+    - docs/images/nf-core-RHReynolds/mkfastq_logo_light.png
+    - docs/images/nf-core-RHReynolds/mkfastq_logo_dark.png
   nextflow_config: False
   files_unchanged:
     - .github/CONTRIBUTING.md
-    - .github/ISSUE_TEMPLATE/bug_report.md
-    - .github/ISSUE_TEMPLATE/feature_request.md
+    - .github/ISSUE_TEMPLATE/bug_report.yml
+    - .github/ISSUE_TEMPLATE/feature_request.yml
     - .github/PULL_REQUEST_TEMPLATE.md
     - .github/workflows/branch.yml
     - assets/email_template.html
@@ -21,3 +24,4 @@ lint:
     - assets/sendmail_template.txt
     - bin/scrape_software_versions.py
     - docs/README.md
+repository_type: pipeline
