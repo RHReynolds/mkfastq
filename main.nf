@@ -28,7 +28,7 @@ include { MKFASTQ } from './workflows/mkfastq'
 //
 // WORKFLOW: Run main RHReynolds/mkfastq analysis pipeline
 //
-workflow NF-MKFASTQ {
+workflow NF_MKFASTQ {
     MKFASTQ ()
 }
 
@@ -40,9 +40,10 @@ workflow NF-MKFASTQ {
 
 //
 // WORKFLOW: Execute a single named workflow for the pipeline
+// https://github.com/nf-core/rnaseq/issues/619
 //
 workflow {
-    NF-MKFASTQ ()
+    NF_MKFASTQ ()
 }
 
 /*
