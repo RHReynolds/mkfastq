@@ -1,36 +1,33 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/RHReynolds/mkfastq/master/assets/schema_input.json",
-    "title": "RHReynolds/mkfastq pipeline - params.input schema",
-    "description": "Schema for the file provided with params.input",
+    "title": "RHReynolds/mkfastq pipeline - params.input_csv schema",
+    "description": "Schema for the file provided with params.input_csv",
     "type": "array",
     "items": {
         "type": "object",
         "properties": {
-            "sample": {
+            "Lane": {
                 "type": "string",
                 "pattern": "^\\S+$",
-                "errorMessage": "Sample name must be provided and cannot contain spaces"
+                "errorMessage": "Should be either a single lane, a range (e.g., 2-4) or '*' for all lanes in the flow cell."
             },
-            "fastq_1": {
+            "Sample": {
                 "type": "string",
-                "pattern": "^\\S+\\.f(ast)?q\\.gz$",
-                "errorMessage": "FastQ file for reads 1 must be provided, cannot contain spaces and must have extension '.fq.gz' or '.fastq.gz'"
+                "pattern": "^\\S+$",
+                "errorMessage": "Sample name must be provided and cannot contain spaces. Only letters, numbers, underscores and hyphens area allowed; no other symbols, including dots ('.') are allowed."
             },
-            "fastq_2": {
-                "errorMessage": "FastQ file for reads 2 cannot contain spaces and must have extension '.fq.gz' or '.fastq.gz'",
-                "anyOf": [
-                    {
-                        "type": "string",
-                        "pattern": "^\\S+\\.f(ast)?q\\.gz$"
-                    },
-                    {
-                        "type": "string",
-                        "maxLength": 0
-                    }
-                ]
+            "Index": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "If using the 10x index plate name, should be of the style e.g. SI-TT-G10. If using index sequences, should be a string of characters. No spaces."
+            },
+            "Index2": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "If using index sequences, should be a string of characters. No spaces."
             }
         },
-        "required": ["sample", "fastq_1"]
+        "required": ["Lane", "Sample", "Index"]
     }
 }
