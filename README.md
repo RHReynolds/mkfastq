@@ -41,7 +41,7 @@ The mkfastq pipeline comes with documentation about the pipeline [usage](./docs/
 
 ## Credits
 
-mkfastq was originally written by Regina H Reynolds.
+mkfastq was originally written by Regina H Reynolds (albeit with a heavy dependence on nf-core templates and resources!)
 
 ## Contributions and Support
 
