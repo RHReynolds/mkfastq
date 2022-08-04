@@ -1,6 +1,6 @@
 lint:
   actions_awsfulltest: False
-  pipeline_todos: False
+  pipeline_todos: True
   files_exist:
     - .github/ISSUE_TEMPLATE/config.yml
     - .github/workflows/awstest.yml
@@ -9,6 +9,7 @@ lint:
     - assets/nf-core-RHReynolds/mkfastq_logo_light.png
     - assets/multiqc_config.yml
     - conf/test_full.config
+    - conf/igenomes.config
     - docs/images/nf-core-RHReynolds/mkfastq_logo.png
     - docs/images/nf-core-RHReynolds/mkfastq_logo_light.png
     - docs/images/nf-core-RHReynolds/mkfastq_logo_dark.png
