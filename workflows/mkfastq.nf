@@ -73,7 +73,6 @@ workflow MKFASTQ {
     //
     CELLRANGER_MKFASTQ (
         ch_bcl,
-        // TODO nf-core: change .out reference after altering input?check
         INPUT_CHECK.out.csv
     )
     ch_versions = ch_versions.mix(CELLRANGER_MKFASTQ.out.versions)
