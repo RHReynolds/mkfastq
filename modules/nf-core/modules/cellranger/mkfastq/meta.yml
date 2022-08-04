@@ -24,10 +24,10 @@ input:
       description: Sample sheet
       pattern: "*.csv"
 output:
-  - fastq:
+  - fastq_path:
       type: file
-      description: Unaligned FastQ files
-      pattern: "*.fastq.gz"
+      description: Output of bcl2fastq2, which includes unaligned FastQ files
+      pattern: "*/outs/fastq_path/*"
   - versions:
       type: file
       description: File containing software version

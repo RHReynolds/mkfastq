@@ -1,6 +1,6 @@
 process CELLRANGER_MKFASTQ {
     tag "mkfastq"
-    label 'process_medium'
+    label 'process_high'
 
     if (params.enable_conda) {
         exit 1, "Conda environments cannot be used when using the Cell Ranger tool. Please use docker or singularity containers."
@@ -13,7 +13,7 @@ process CELLRANGER_MKFASTQ {
 
     output:
     path "versions.yml", emit: versions
-    path "${bcl.getSimpleName()}/outs/fastq_path/*.fastq.gz"  , emit: fastq
+    path "${bcl.getSimpleName()}/outs/fastq_path/*"  , emit: fastq_path
 
     when:
     task.ext.when == null || task.ext.when
