@@ -11,7 +11,7 @@
 You will need to create a samplesheet with information about the samples you would like to analyse before running the pipeline. Use this parameter to specify its location. It has to be a comma-separated file with 3 columns, and a header row as shown in the examples below.
 
 ```console
---input '[path to samplesheet file]'
+--input_csv '[path to samplesheet file]'
 ```
 
 The samplesheet can have as many columns as you desire, however, there is a strict requirement for the first 3 columns to match those defined in the table below.
