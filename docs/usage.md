@@ -1,7 +1,5 @@
 # mkfastq: Usage
 
-## :warning: Please read this documentation on the nf-core website: [https://nf-co.re/rhreynolds-mkfastq/usage](https://nf-co.re/rhreynolds-mkfastq/usage)
-
 > _Documentation of pipeline parameters is generated automatically from the pipeline schema and can no longer be found in markdown files._
 
 ## Introduction
